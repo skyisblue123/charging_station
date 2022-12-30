@@ -1,0 +1,106 @@
+@charset "UTF-8";
+.wrap {
+  margin: 0 auto;
+  background: #e5e6d9;
+  max-width: 100%;
+  padding: 3% 17%;
+  font-family: serif;
+  /*選擇行政區&計費方式*/
+  /*body*/
+}
+.wrap .head h1 {
+  color: #535d6c;
+  font-size: 50px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .wrap .head h1 {
+    text-align: center;
+    line-height: 1.2;
+  }
+  .wrap .head h1 span {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .wrap .head h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 320px) {
+  .wrap .head h1 {
+    font-size: 38px;
+  }
+}
+.wrap .body {
+  display: flex;
+  /*顯示充電站*/
+}
+.wrap .body .enter {
+  display: flex;
+  flex-direction: column;
+}
+.wrap .body .enter .district,
+.wrap .body .enter .charge,
+.wrap .body .enter button {
+  text-align: center;
+  background: #d0daa7;
+  color: #535d6c;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+.wrap .body .enter .district,
+.wrap .body .enter .charge {
+  margin: 70px 0 0;
+  padding: 15px 0;
+  font-size: 45px;
+}
+.wrap .body .enter .district option,
+.wrap .body .enter .charge option {
+  color: #000;
+  background: #ece9ea;
+}
+.wrap .body .enter .charge {
+  margin-top: 50px;
+}
+.wrap .body .enter button {
+  padding: 0 5%;
+  height: 84px;
+  margin-top: 50px;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+.wrap .body .enter .district:hover,
+.wrap .body .enter .charge:hover,
+.wrap .body .enter button:hover {
+  background: #bece7f;
+}
+.wrap .body .list {
+  color: #535d6c;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 5% 0 0 10%;
+}
+.wrap .body .list li {
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .wrap .body li span {
+    display: block;
+  }
+  .wrap .body li .reset {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .wrap .body .list {
+    font-size: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .wrap .body {
+    flex-direction: column;
+  }
+}
